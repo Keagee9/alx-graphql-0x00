@@ -1,0 +1,14 @@
+fragment CharacterFields on Character {
+  id
+  name
+  status
+  species
+  type
+  gender
+}
+
+query GetCharacterById3 {
+  character(id: "3") {
+    ...CharacterFields
+  }
+}
